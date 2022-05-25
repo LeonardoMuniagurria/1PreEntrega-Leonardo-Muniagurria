@@ -466,7 +466,6 @@ footer{
     width: 220px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .col .social a{
     height: 40px;
@@ -539,17 +538,13 @@ footer{
             font-size: 1rem;
         }
         .col ul li a{
-            font-size: 15px;
-        }
-        .col .social{
-            padding: 10px;
+            font-size: 10px;
         }
         .col .social a{
             width: 20%;
             
         }
-
+}
         
-    }
 
 
