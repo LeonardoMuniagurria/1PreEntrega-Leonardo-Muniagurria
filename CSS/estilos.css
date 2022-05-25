@@ -615,7 +615,8 @@ footer{
         }
         .logo{
             width: 50px;
-            font-size: 20px;
+            font-size: 19px;
+
         }
         .inicio{
             grid-template-columns: 1fr;
