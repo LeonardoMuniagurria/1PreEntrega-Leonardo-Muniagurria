@@ -606,5 +606,69 @@ footer{
             
         }
     }
+    @media screen and (max-width:576px){
+        header{
+            padding: 5px;
+        }
+        .navbar a{
+            font-size: 15px;
+        }
+        .logo{
+            width: 50px;
+            font-size: 20px;
+        }
+        .inicio{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "inicio1"
+            "inicio1"
+        }
+        .inicio-img img{
+            width: 100%;
+        }
+        .inicio-texto h1{
+            font-size: 4.5rem;
+            text-align: center;
+            
+        }
+        .inicio-texto h2{
+            font-size: 3.5rem;
+            display: flex;
+            text-align: center;
+        }
+        .btn{
+           display: flex;
+           text-align: center;
+        }
+        .part{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "part1"
+            "part1"
+        }
+        footer{
+            padding: 20px;
+        }
+        .col{
+            padding: 20px;
+        }
+        .col h4{
+            font-size: 1rem;
+        }
+        .col ul li a{
+            font-size: 15px;
+        }
+        .col .social{
+            padding: 10px;
+        }
+        .col .social a{
+            width: 20%;
+            
+        }
+
+        
+    }
 
 
