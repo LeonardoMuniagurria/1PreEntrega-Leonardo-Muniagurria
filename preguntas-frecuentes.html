@@ -10,6 +10,8 @@
     
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,33 +36,30 @@
     <main>   
         <section class="inicio2" id="inicio2">
             <div class="inicio-img2">
-                <img src="./Images/imagendudas.png" alt="">
+                <img src="./Images/imagendudas.png" alt="" class="wow animate__animated animate__zoomIn">
             </div>
             <div class="inicio-texto2">
-                <h1>Dudas</h1>
-                <h2>Te quedaste con dudas? <br> Aqui te respondemos!</h2>
-                <a href="#part" class="btn">Resolver mis dudas</a>
+                <h1 class="wow animate__animated animate__flipInX">Dudas</h1>
+                <h2 class="wow animate__animated animate__flipInX">Te quedaste con dudas? <br> Aqui te respondemos!</h2>
             </div>
         </section>
 
     <!-----PrimeraParte---->
     <section class="part" id="part">
         <div class="part-text2">
-            <span>Preguntas Frecuentes</span>
-            <h2>No te quedes con tu duda! </h2>
-            <h3 class="tituloduda">¿No se como comprar? ¿Como lo hago?</h3>
-            <p>Tranquilo. Primero revisa nustros productos y busca una idea extraordinaria. 
+            <h2 class="wow animate__animated animate__flipInX">No te quedes con tu duda! </h2>
+            <h3 class="tituloduda wow animate__animated animate__flipInX">¿No se como comprar? ¿Como lo hago?</h3>
+            <p class="wow animate__animated animate__flipInX">Tranquilo. Primero revisa nustros productos y busca una idea extraordinaria. 
             Segundo consulta en la pestaña de contacto el precio de tu animacion y la idea a realizar y nosotros nos encargaremos de lo demas.</p>
-            <h3 class="tituloduda">¿Que metodos de pago aceptan?</h3>
-            <p>Aceptamos todos los metodos de pagos desde Tarjetas de creditos y debitos, efectivo o MercadoPago que es muy facil de usar y dinamica para comprar sin ningun tipo de problema.
+            <h3 class="tituloduda wow animate__animated animate__flipInX">¿Que metodos de pago aceptan?</h3>
+            <p class="wow animate__animated animate__flipInX">Aceptamos todos los metodos de pagos desde Tarjetas de creditos y debitos, efectivo o MercadoPago que es muy facil de usar y dinamica para comprar sin ningun tipo de problema.
             </p>
-            <h3 class="tituloduda">¿Son confiables?</h3>
-            <p>Contamos con valoracion de 4.9 en nuestro sitio web, las entregas son en tiempo y forma y nuestros clientes son de prueba de eso. 
+            <h3 class="tituloduda wow animate__animated animate__flipInX">¿Son confiables?</h3>
+            <p class="wow animate__animated animate__flipInX">Contamos con valoracion de 4.9 en nuestro sitio web, las entregas son en tiempo y forma y nuestros clientes son de prueba de eso. 
                 Ademas somos lideres en el Mercado de la Animacion de minecraft y ganamos distintos premios a lo largo de los años en 2016, 2018, 2019 y 2021</p>
-                <a href="contacto.html" class="btn">Contactarnos</a>
         </div>
         <div class="part-img2">
-            <img src="./Images/Sin título.png" alt="">
+            <img src="./Images/Sin título.png" alt="" class="wow animate__animated animate__zoomIn">
         </div>
     </section>
     </main>
@@ -102,6 +101,10 @@
                     </div>        
         </footer>
     
-        
+        <script src="js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+
     </body>
     </html>

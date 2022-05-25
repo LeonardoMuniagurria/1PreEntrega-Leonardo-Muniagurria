@@ -87,12 +87,9 @@ section{
     max-width: 120%;
     width: 900px;
     height: auto;
-    transition: .4s;
 }
 
-.inicio-img img:hover{
-    transform: scale(1.2);
-}
+
 
 
 .inicio-texto h1{
@@ -104,6 +101,7 @@ section{
     margin: 1rem 0 2rem;
 }
 
+
 /*inicio2*/
 .inicio2{
     width: 100%;
@@ -111,8 +109,8 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
-    grid-area: inicio2;
-    grid-template-areas: "incio2 inicio2";
+    grid-area: "inicio2";
+    grid-template-areas: "inicio2 inicio2";
     align-items: center;
 }
 
@@ -223,6 +221,7 @@ section{
 }
 .part-text h2{
     font-size: var(--h2-font);
+    color: var(--main-color);
 }
 .part-text p{
     margin: 0.8rem 0 1.8rem;
@@ -545,6 +544,24 @@ footer{
         .col .social a{
             width: 19%;
             
+        }
+        .inicio2{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "inicio2"
+            "inicio2"
+        }
+        .inicio3{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "inicio3"
+            "inicio3"
+        }
+        .inicio-img3 img{
+            width: 100%;
+            padding: 50px;
         }
 }
         

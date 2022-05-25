@@ -7,6 +7,8 @@
     <title>FlexARG Page Official</title>
     <!------CSS------>
     <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -36,23 +38,22 @@
     <main>   
     <section class="inicio" id="inicio">
         <div class="inicio-texto">
-            <h1>Pagina Oficial</h1>
-            <h2>Animaciones <br> Diseños y Renders</h2>
+            <h1 class="wow animate__animated animate__zoomIn">Pagina Oficial</h1>
+            <h2 class="wow animate__animated animate__zoomIn">Animaciones <br> Diseños y Renders</h2>
         </div>
         <div class="inicio-img">
-                <img src="./Images/IMAGENLOGO2.png" alt="">
+                <img src="./Images/IMAGENLOGO2.png" alt="" class="wow animate__animated animate__zoomIn">
         </div>
     </section>
 
     <!-----PrimeraParte---->
     <section class="part" id="part">
         <div class="part-img">
-            <img src="./Images/skin1.png" alt="">
+            <img src="./Images/skin1.png" alt="" class="wow animate__animated animate__zoomIn">
         </div>
         <div class="part-text">
-            <span>Nosotros</span>
-            <h2>Empresa de animaciones <br> diseños y renders </h2>
-            <p>Somos una Empresa de animacion que cuenta
+            <h2 class="wow animate__animated animate__zoomIn">Empresa de animaciones <br> diseños y renders </h2>
+            <p class="wow animate__animated animate__zoomIn">Somos una Empresa de animacion que cuenta
                 con un equipo de mas 200 animadores y diseñadores.
                 Las animaciones son algo especial para nuestra vida nos
                 llenan de alegria incluso nos transmiten sentimientos.
@@ -72,7 +73,7 @@
         <div class="menu-container">
             <div class="box">
                 <div class="box-img">
-                    <img src="./Images/IMAGEN8.png" alt="">
+                    <img src="./Images/IMAGEN8.png" alt="" class="wow animate__animated animate__zoomIn">
                 </div>
                 <h2>Animations</h2>
                 <h3>Video 1min</h3>
@@ -82,7 +83,7 @@
 
             <div class="box">
                 <div class="box-img">
-                    <img src="./Images/IMAGEN82.png" alt="">
+                    <img src="./Images/IMAGEN82.png" alt="" class="wow animate__animated animate__zoomIn">
                 </div>
                 <h2>Renders</h2>
                 <h3>Cinema4d</h3>
@@ -92,7 +93,7 @@
 
             <div class="box">
                 <div class="box-img">
-                    <img src="./Images/diseño3.png" alt="">
+                    <img src="./Images/diseño3.png" alt="" class="wow animate__animated animate__zoomIn">
                 </div>
                 <h2>Design</h2>
                 <h3>Graphics</h3>
@@ -112,19 +113,19 @@
 
         <div class="service-container">
             <div class="s-box">
-                <img src="./Images/bolsas-de-compra.png" alt="">
+                <img src="./Images/bolsas-de-compra.png" alt="" class="wow animate__animated animate__zoomIn">
                 <h3>Compra</h3>
                 <p>Una vez realizada la compra, pasara a manos de equipo para revisar el pedido y ponerse en accion</p>
             </div>
 
             <div class="s-box">
-                <img src="./Images/entrega-urgente.png" alt="">
+                <img src="./Images/entrega-urgente.png" alt="" class="wow animate__animated animate__zoomIn">
                 <h3>Entrega</h3>
                 <p>Una vez realizado el pedido, nos pondremos en contacto contigo para revisar en caso de alguna falla</p>
             </div>
 
             <div class="s-box">
-                <img src="./Images/ux.png" alt="">
+                <img src="./Images/ux.png" alt="" class="wow animate__animated animate__zoomIn">
                 <h3>Terminado</h3>
                 <p>Con el pedido en tus manos, estaremos felices, SOLO QUEDA DISFRUTAR! y no olvides valorarnos!!</p>
             </div>
@@ -133,7 +134,7 @@
     </section>
 
     <!----Dudas---->
-    <section class="cta">
+    <section class="cta wow animate__animated animate__slideInRight">
         <h2>Quieres consultar algo? <br> Estamos las 24 hrs <br> Cualquier duda o problema</h2>
     </section>
 </main> 
@@ -173,6 +174,11 @@
                 </div>        
     </footer>
 
-    
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
 </body>
+
 </html>

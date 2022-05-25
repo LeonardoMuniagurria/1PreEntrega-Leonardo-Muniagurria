@@ -10,6 +10,8 @@
     
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,9 +35,9 @@
     <!----forumulario--->  
     <section class="inicio3" id="inicio3">
         <div class="inicio-img3">
-            <img src="./Images/imagen19.png" alt="">
+            <img src="./Images/imagen19.png" alt="" class="wow animate__animated animate__zoomIn">
         </div>
-        <form class="form">
+        <form class="form wow animate__animated animate__slideInRight">
             <div class="form__container">
                 <h2 class="form__title">Realiza tu Consulta</h2>
                 <input type="text" class="form__input" placeholder="Nombre">
@@ -61,12 +63,11 @@
     <!-----PrimeraParte---->
     <section class="part" id="part">
         <div class="part-img4">
-            <img src="./Images/correo-electronico.png" alt="">
+            <img src="./Images/correo-electronico.png" alt="" class="wow animate__animated animate__slideInLeft">
         </div>
         <div class="part-text">
-            <span>Hablanos!</span>
-            <h2>Puedes realizar cualquier cosa. <br> Dudas o incluso si quieres comprar y ponerte en contacto con nuestro equipo </h2>
-            <p>Quieres realizar una consulta? Algo no te quedo muy claro? Nesesitas contactar con nuestro equipo para estar seguro? Quieres comprar? Ponte en contacto con nuestro equipo con la mayor brevedad estaremos contigo para aclarar cualquier tipo de duda o problema que se pueda tener. </p>
+            <h2 class="wow animate__animated animate__slideInRight">Realiza tu consulta sin ningun problema!</h2>
+            <p class="wow animate__animated animate__slideInRight">Quieres realizar una consulta? Algo no te quedo muy claro? Nesesitas contactar con nuestro equipo para estar seguro? Quieres comprar? Ponte en contacto con nuestro equipo con la mayor brevedad estaremos contigo para aclarar cualquier tipo de duda o problema que se pueda tener. </p>
         </div>
     </section>
     
@@ -105,7 +106,11 @@
                 </div>        
     </footer>
 
-    
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
 </body>
 </html> 
 
