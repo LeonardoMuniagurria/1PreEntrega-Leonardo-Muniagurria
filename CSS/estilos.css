@@ -213,7 +213,9 @@ section{
 .part-img2 img:hover{
     transform: scale(1.2);
 }
-
+.part-img4 img{
+    width: 80%;
+}
 
 .part-text span{
     color: var(--main-color);
@@ -483,168 +485,64 @@ footer{
     color: var(--bg-color);
     background: var(--text-color);
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 390px){
     header{
-        padding: 40px;
+        padding: 5px;
+    }
+    .navbar a{
+        font-size: 15px;
     }
     .logo{
-        font-weight: 600;
-        font-size: 2rem;
-        
-
+        width: 50px;
+        font-size: 20px;
     }
-}
-@media screen and (max-width: 576px){
-    .inicio2{
-        grid-template-columns: 1fr;
-        padding: 7rem;
-        text-align: center;
-        grid-template-areas: 
-             "inicio2"
-             "inicio2"
-    }
-    .inicio-img img{
-        max-width: 150%;
-        padding: 2rem;
-        width: 100%;
-        
-    }
-}
-@media screen and (max-width: 576px){
-    .inicio3{
-        grid-template-columns: 1fr;
-        text-align: center;
-        grid-template-areas: 
-             "inicio3"
-             "inicio3"
-    }
-    .inicio-img3 img{
-        max-width: 100%;
-        padding: 2rem;
-        width: 100%;
-        
-    }
-}
-
-
-
-@media screen and (max-width: 576px){
     .inicio{
         grid-template-columns: 1fr;
-        padding: 7rem;
-        text-align: center;
-        grid-template-areas: 
-             "inicio1"
-             "inicio1"
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "inicio1"
+        "inicio1"
     }
     .inicio-img img{
-        max-width: 100%;
-        padding: 2rem;
         width: 100%;
-        
     }
-}
-
-
-@media screen and (max-width: 576px){
-    .part{
-        grid-template-columns: 1fr;
-        padding: 7rem;
+    .inicio-texto h1{
+        font-size: 4.5rem;
         text-align: center;
-        grid-template-areas: 
-             "part1"
-             "part1"
-    }
-    .part-img img{
-        max-width: 120%;
-        width: 100%;
-    }
- 
-    .part-text{
-        padding: 2rem;
-    }
-}
-
-@media screen and (max-width: 768px){
-    header{
-        padding: 30px;
-    }
-    .logo{
-        font-weight: 600;
-        font-size: 2rem;
         
-
-    } 
-}
-
-
-@media screen and (max-width: 768px){
-    footer{
+    }
+    .inicio-texto h2{
+        font-size: 2rem;
         display: flex;
-        flex-direction: column;
-        padding: 1px 10px;
-        margin: 0px 0px 0px 20px;
-
+        text-align: center;
     }
-}
-@media screen and (max-width: 768px){
+    .btn{
+       display: flex;
+       text-align: center;
+    }
     .part{
         grid-template-columns: 1fr;
-        padding: 7rem;
-        text-align: center;
+        grid-template-rows: 1fr;
         grid-template-areas: 
-             "part1"
-             "part1"
+        "part1"
+        "part1"
     }
-    .part-text2{
-        padding: 2rem;
+    footer{
+        padding: 5px;
     }
-}
-@media screen and (max-width: 768px){
-    .inicio2{
-        grid-template-columns: 1fr;
-        padding: 7rem;
-        text-align: center;
-        grid-template-areas: 
-             "inicio2"
-             "inicio2"
+    .col{
+        padding: 20px;
     }
-    .inicio-img img{
-        max-width: 150%;
-        padding: 2rem;
-        width: 100%;
+    .col h4{
+        font-size: 1rem;
+    }
+    .col ul li a{
+        font-size: 12px;
+    }
+    .col .social{
+        width: 50%;
         
     }
 }
-@media screen and (max-width: 768px){
-    .inicio{
-        grid-template-columns: 1fr;
-        padding: 7rem;
-        text-align: center;
-        grid-template-areas: 
-             "inicio1"
-             "inicio1"
-    }
-    .inicio-img img{
-        max-width: 100%;
-        padding: 2rem;
-        width: 100%;
-        
-    }
-}
-@media screen and (max-width: 768px){
-    .inicio3{
-        grid-template-columns: 1fr;
-        text-align: center;
-        grid-template-areas: 
-             "inicio3"
-             "inicio3"
-    }
-    .inicio-img3 img{
-        max-width: 100%;
-        padding: 2rem;
-        width: 100%;
-        
-    }
-}
+
 
