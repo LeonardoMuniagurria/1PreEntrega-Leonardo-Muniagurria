@@ -485,12 +485,15 @@ footer{
     background: var(--text-color);
 }
 
-    @media screen and (max-width:576px){
+@media screen and (max-width:576px){
         header{
             padding: 5px;
+            margin: 10px;
         }
         .navbar a{
             font-size: 15px;
+            padding: 5px;
+            margin: 30px;
         }
         .logo{
             width: 50px;
@@ -508,13 +511,12 @@ footer{
             width: 100%;
         }
         .inicio-texto h1{
-            font-size: 4.5rem;
+            font-size: 3rem;
             text-align: center;
             
         }
         .inicio-texto h2{
-            font-size: 3.5rem;
-            display: flex;
+            font-size: 2rem;
             text-align: center;
         }
         .btn{
