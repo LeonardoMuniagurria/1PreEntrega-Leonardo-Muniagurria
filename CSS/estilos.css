@@ -560,8 +560,8 @@ footer{
             "inicio3"
         }
         .inicio-img3 img{
-            width: 100%;
-            padding: 50px 1px;
+            width: 101%;
+            padding: 50px 0.5px;
         }
 }
         
