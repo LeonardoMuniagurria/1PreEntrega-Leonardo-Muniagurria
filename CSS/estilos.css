@@ -486,18 +486,14 @@ footer{
 
 @media screen and (max-width:576px){
         header{
-            padding: 5px;
-            margin: 10px;
+            padding: 1px;
+            
+        }
+        .logo{
+            font-size: 30px;
         }
         .navbar a{
             font-size: 15px;
-            padding: 5px;
-            margin: 30px;
-        }
-        .logo{
-            width: 50px;
-            font-size: 19px;
-
         }
         .inicio{
             grid-template-columns: 1fr;
