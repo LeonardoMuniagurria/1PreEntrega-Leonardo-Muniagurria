@@ -1,0 +1,173 @@
+header {
+  background-color: var(--bg-color);
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 171px;
+}
+
+header .logo {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navbar a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+header .navbar a:hover {
+  color: var(--main-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.inicio2 {
+  width: 100%;
+  min-height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  grid-area: "inicio2";
+      grid-template-areas: "inicio2 inicio2";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inicio2 .inicio-img2 img {
+  max-width: 100%;
+  width: 1000px;
+  height: auto;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.inicio2 .inicio-img2 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.inicio2 .inicio-texto2 h1 {
+  font-size: var(--big-font);
+  color: var(--main-color);
+}
+
+.inicio2 .inicio-texto2 h2 {
+  font-size: var(--h2-font);
+  margin: 1rem 0 2rem;
+}
+
+.part {
+  display: -ms-grid;
+  display: grid;
+      grid-template-columns: repeat(2, 2fr);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: part1;
+      grid-template-areas: "part1 part1";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.part .part-img2 img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.part .part-img2 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.part .part-text2 h2 {
+  color: var(--main-color);
+  font-size: var(--h2-font);
+}
+
+.part .part-text2 p {
+  font-size: 20px;
+  margin: 0.8rem 0 1.8rem;
+  line-height: 1.7rem;
+}
+
+.part .part-text2 h3 {
+  margin: 0.8rem 0;
+}
+
+footer {
+  padding: 70px 37%;
+  background-color: var(--bg-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --main-color:rgb(3, 195, 243);
+  --text-color:#fff;
+  --bg-color:#1e1c2a;
+  --big-font:5rem;
+  --h2-font:2.25rem;
+  --p-font:0.9rem;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+section {
+  padding: 70px 17%;
+  background-color: var(--bg-color);
+}
+
+#menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.col p {
+  color: #9897a9;
+  font-size: 1.1rem;
+  display: block;
+  text-transform: capitalize;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*# sourceMappingURL=estilo.css.map */

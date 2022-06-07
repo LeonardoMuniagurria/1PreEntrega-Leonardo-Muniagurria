@@ -8,6 +8,7 @@
     <!------CSS------>
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     
     <link rel="stylesheet"
@@ -22,24 +23,53 @@
 
 </head>
 <body>
-    <div class="headerbox">
-    <header>
-        <a href="#" class="logo">FlexARG</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <ul class="navbar">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="preguntas-frecuentes.html">Dudas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </header>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" href="#">FlexARG</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="index.html">Inicio</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="preguntas-frecuentes.html">Dudas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-black" href="#">Youtube</a></li>
+                  <li><a class="dropdown-item text-black" href="#">Instagram</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-black" href="#">Twitter</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-success">Minecraft</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
 
     <!----Inicio--->
     <main>   
     <section class="inicio" id="inicio">
         <div class="inicio-texto">
-            <h1 class="wow animate__animated animate__zoomIn">Pagina Oficial</h1>
-            <h2 class="wow animate__animated animate__zoomIn">Animaciones <br> Diseños y Renders</h2>
+            <h1 class="wow animate__animated animate__zoomIn text-info">Pagina Oficial</h1>
+            <h2 class="wow animate__animated animate__zoomIn text-light">Animaciones <br> Diseños y Renders</h2>
         </div>
         <div class="inicio-img">
                 <img src="./Images/IMAGENLOGO2.png" alt="" class="wow animate__animated animate__zoomIn">
@@ -53,7 +83,7 @@
         </div>
         <div class="part-text">
             <h2 class="wow animate__animated animate__zoomIn">Empresa de animaciones <br> diseños y renders </h2>
-            <p class="wow animate__animated animate__zoomIn">Somos una Empresa de animacion que cuenta
+            <p class="wow animate__animated animate__zoomIn text-light">Somos una Empresa de animacion que cuenta
                 con un equipo de mas 200 animadores y diseñadores.
                 Las animaciones son algo especial para nuestra vida nos
                 llenan de alegria incluso nos transmiten sentimientos.
@@ -61,14 +91,15 @@
                 de minecraft y somos capaces de transformar una idea
                 a un video para alcanzar eso que mas quieres, para hacer
                 tu sueño realidad. </p>
+
         </div>
     </section>
 
     <!------Menu Primero-->
     <section class="menu" id="menu">
         <div class="heading">
-            <span>Menu Productos</span>
-            <h2>Venta al mejor precio</h2>
+            <span >Menu Productos</span>
+            <h2 class="text-light">Venta al mejor precio</h2>
         </div>
         <div class="menu-container">
             <div class="box">
@@ -108,72 +139,53 @@
     <section class="services" id="services">
         <div class="heading">
             <span>Servicio</span>
-            <h2>Proceso De Compra</h2>
+            <h2 class="text-light">Proceso De Compra</h2>
         </div>
 
         <div class="service-container">
             <div class="s-box">
                 <img src="./Images/bolsas-de-compra.png" alt="" class="wow animate__animated animate__zoomIn">
                 <h3>Compra</h3>
-                <p>Una vez realizada la compra, pasara a manos de equipo para revisar el pedido y ponerse en accion</p>
+                <p class="text-light">Una vez realizada la compra, pasara a manos de equipo para revisar el pedido y ponerse en accion</p>
             </div>
 
             <div class="s-box">
                 <img src="./Images/entrega-urgente.png" alt="" class="wow animate__animated animate__zoomIn">
                 <h3>Entrega</h3>
-                <p>Una vez realizado el pedido, nos pondremos en contacto contigo para revisar en caso de alguna falla</p>
+                <p class="text-light">Una vez realizado el pedido, nos pondremos en contacto contigo para revisar en caso de alguna falla</p>
             </div>
 
             <div class="s-box">
                 <img src="./Images/ux.png" alt="" class="wow animate__animated animate__zoomIn">
                 <h3>Terminado</h3>
-                <p>Con el pedido en tus manos, estaremos felices, SOLO QUEDA DISFRUTAR! y no olvides valorarnos!!</p>
+                <p class="text-light">Con el pedido en tus manos, estaremos felices, SOLO QUEDA DISFRUTAR! y no olvides valorarnos!!</p>
             </div>
 
         </div>
     </section>
-
-    <!----Dudas---->
-    <section class="cta wow animate__animated animate__slideInRight">
-        <h2>Quieres consultar algo?? <br> Estamos las 24 hrs <br> Cualquier duda o problema :)</h2>
-    </section>
 </main> 
 
     <!-----footer start---->
-<footer>
+    <footer>
         <div class="footer">
-            <div class="main">
-                <div class="col">
-                    <h4>Links</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="preguntas-frecuentes.html">Dudas</a></li>
-                        <li><a href="Contacto.html">Contacto</a></li>
-                        <li> <a href="web-design.html">Web Design</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col">
-                    <h4>Nosotros</h4>
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#">Animadores</a></li>
-                        <li><a href="#">Diseñadores</a></li>
-                        <li> <a href="#">Renders</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h4>Nuestras redes</h4>
-                    <div class="social">
-                        <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
-                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-                        <a href="#"><i class='bx bxl-twitter' ></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>        
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Youtube</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Twitter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Instagram</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled text-info">FlexARG</a>
+                </li>
+              </ul>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+    
 
     <script src="js/wow.min.js"></script>
     <script>

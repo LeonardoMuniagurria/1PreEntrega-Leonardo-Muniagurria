@@ -49,32 +49,9 @@ main{
 }
 
 
-
-.logo{
-    color:var(--main-color);
-    font-weight: 600;
-    font-size: 2.4rem;
-}
-.navbar{
-    display: flex;
-}
-.navbar a{
-    color: var(--text-color);
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    font-weight: 500;
-}
-.navbar a:hover{
-    color: var(--main-color);
-    transition: .4s;
-}
-#menu-icon{
-    font-size: 2rem;
-    cursor: pointer;
-    display: none;
-}
 section{
     padding: 70px 17%;
+    background-color: var(--bg-color);
 }
 
 
@@ -144,6 +121,7 @@ section{
 /*Inicio3*/
 .inicio3{
     width: 100%;
+    background-color: var(--bg-color);
     min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -195,6 +173,7 @@ section{
 }
 .part{
     display: grid;
+    background-color: var(--bg-color);
     grid-template-columns: repeat(2, 2fr);
     grid-area: part1;
     grid-template-areas: "part1 part1";
@@ -416,80 +395,7 @@ footer{
     background-color: var(--bg-color);
 }
 
-.main{
-   display: flex;
-   flex-wrap: wrap; 
-}
 
-.footer{
-    padding: 30px 0;
-}
-.col{
-    width: 25%;
-}
-.col h4{
-    font-size: 1.2rem;
-    color: var(--text-color);
-    margin-bottom: 25px;
-    position: relative;
-}
-.col h4::before{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 50px;
-    left: 0;
-    bottom: -8px;
-    background: var(--main-color);
-}
-.col ul li:not(:last-child) {
-    margin-bottom: 10px;
-}
-.col ul li a{
-    color: #9897a9;
-    font-size: 1.1rem;
-    display: block;
-    text-transform: capitalize;
-    transition: .4s;
-}
-.col ul li a:hover{
-    color: var(--text-color);
-    transform: translateX(-12px);
-}
-
-.col p{
-    color: #9897a9;
-    font-size: 1.1rem;
-    display: block;
-    text-transform: capitalize;
-    transition: .4s;
-}
-
-.col p:hover{
-    transform: translateX(-12px);
-}
-.col .social{
-    width: 220px;
-    display: flex;
-    align-items: center;
-}
-.col .social a{
-    height: 40px;
-    width: 40px;
-    background: var(--main-color);
-    color: var(--text-color);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    transition: .4s;
-}
-.col .social a:hover{
-    transform: scale(1.2);
-    color: var(--bg-color);
-    background: var(--text-color);
-}
 
 @media screen and (max-width:576px){
         header{
@@ -500,7 +406,7 @@ footer{
             font-size: 30px;
         }
         .navbar a{
-            font-size: 15px;
+            font-size: 10px;
         }
         .inicio{
             grid-template-columns: 1fr;
@@ -533,7 +439,8 @@ footer{
             "part1"
         }
         footer{
-            padding: 20px;
+            
+            width: auto;
         }
         .col{
             padding: 20px;
