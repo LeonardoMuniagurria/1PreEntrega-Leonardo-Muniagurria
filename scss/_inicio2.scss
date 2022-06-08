@@ -20,11 +20,11 @@
     }
     .inicio-texto2{
         h1{
-            font-size: var(--big-font);
-            color: var(--main-color); 
+            font-size: $big-font;
+            color: $main-color; 
         }
         h2{
-            font-size: var(--h2-font);
+            font-size: $h2-font;
             margin: 1rem 0 2rem; 
         }
     }

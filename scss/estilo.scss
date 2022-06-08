@@ -1,7 +1,16 @@
-@import "header";
+$main-color:rgb(3, 195, 243);
+$text-color:#fff;
+$bg-color:#1e1c2a;
+$big-font:5rem;
+$h2-font:2.25rem;
+$p-font:0.9rem;
+
+@import "footer";
 @import "inicio2";
 @import "part";
-@import "footer";
+@import "media";
+@import "inicio3";
+
 
 *{
     padding: 0;
@@ -13,22 +22,14 @@
     text-decoration: none;
 }
 
-:root {
-    --main-color:rgb(3, 195, 243);
-    --text-color:#fff;
-    --bg-color:#1e1c2a;
-    --big-font:5rem;
-    --h2-font:2.25rem;
-    --p-font:0.9rem;
-}
 
 body{
-    color: var(--text-color);
-    background: var(--bg-color);
+    color: $text-color;
+    background: $bg-color;
 }
 section{
     padding: 70px 17%;
-    background-color: var(--bg-color);
+    background-color: $bg-color;
 }
 #menu-icon{
     font-size: 2rem;

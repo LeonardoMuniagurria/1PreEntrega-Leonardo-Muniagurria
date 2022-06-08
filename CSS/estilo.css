@@ -398,16 +398,6 @@ footer{
 
 
 @media screen and (max-width:576px){
-        header{
-            padding: 1px;
-            
-        }
-        .logo{
-            font-size: 30px;
-        }
-        .navbar a{
-            font-size: 10px;
-        }
         .inicio{
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
@@ -437,23 +427,6 @@ footer{
             grid-template-areas: 
             "part1"
             "part1"
-        }
-        footer{
-            
-            width: auto;
-        }
-        .col{
-            padding: 20px;
-        }
-        .col h4{
-            font-size: 1rem;
-        }
-        .col ul li a{
-            font-size: 10px;
-        }
-        .col .social a{
-            width: 19%;
-            
         }
         .inicio2{
             grid-template-columns: 1fr;

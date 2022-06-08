@@ -1,44 +1,6 @@
-header {
-  background-color: var(--bg-color);
-  top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 30px 171px;
-}
-
-header .logo {
-  color: var(--main-color);
-  font-weight: 600;
-  font-size: 2.4rem;
-}
-
-header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .navbar a {
-  color: var(--text-color);
-  font-size: 1.1rem;
-  padding: 10px 20px;
-  font-weight: 500;
-}
-
-header .navbar a:hover {
-  color: var(--main-color);
-  -webkit-transition: .4s;
-  transition: .4s;
+footer {
+  padding: 70px 37%;
+  background-color: #1e1c2a;
 }
 
 .inicio2 {
@@ -46,7 +8,7 @@ header .navbar a:hover {
   min-height: 90vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[];
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
   grid-area: "inicio2";
@@ -70,12 +32,12 @@ header .navbar a:hover {
 }
 
 .inicio2 .inicio-texto2 h1 {
-  font-size: var(--big-font);
-  color: var(--main-color);
+  font-size: 5rem;
+  color: #03c3f3;
 }
 
 .inicio2 .inicio-texto2 h2 {
-  font-size: var(--h2-font);
+  font-size: 2.25rem;
   margin: 1rem 0 2rem;
 }
 
@@ -107,8 +69,8 @@ header .navbar a:hover {
 }
 
 .part .part-text2 h2 {
-  color: var(--main-color);
-  font-size: var(--h2-font);
+  color: #03c3f3;
+  font-size: 2.25rem;
 }
 
 .part .part-text2 p {
@@ -121,9 +83,95 @@ header .navbar a:hover {
   margin: 0.8rem 0;
 }
 
-footer {
-  padding: 70px 37%;
-  background-color: var(--bg-color);
+@media screen and (max-width: 576px) {
+  .inicio2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "inicio2" "inicio2";
+  }
+  .part {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "part1" "part1";
+  }
+  .inicio3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "inicio3" "inicio3";
+  }
+}
+
+.inicio3 {
+  width: 100%;
+  background-color: #1e1c2a;
+  min-height: 90vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: inicio3;
+      grid-template-areas: "inicio3 incio3";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form {
+  background-color: #5800a0;
+  width: 90%;
+  margin: auto;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 4em 2em;
+}
+
+.form .form__container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+
+.form .form__container .form__title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: .4em;
+}
+
+.form .form__input {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .8em 1em;
+  outline: none;
+  border: none;
+  border: 1px solid #bbb0b0;
+  border-radius: 0.2em;
+}
+
+.form .form__cta {
+  font-family: inherit;
+  background-color: #089fe0;
+  color: white;
+  border: none;
+  font-weight: 300;
+  padding: .7em 0;
+  border-radius: .2em;
+  cursor: pointer;
+}
+
+.form .form__input--message {
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: .5em;
 }
 
 * {
@@ -137,23 +185,14 @@ footer {
   text-decoration: none;
 }
 
-:root {
-  --main-color:rgb(3, 195, 243);
-  --text-color:#fff;
-  --bg-color:#1e1c2a;
-  --big-font:5rem;
-  --h2-font:2.25rem;
-  --p-font:0.9rem;
-}
-
 body {
-  color: var(--text-color);
-  background: var(--bg-color);
+  color: #fff;
+  background: #1e1c2a;
 }
 
 section {
   padding: 70px 17%;
-  background-color: var(--bg-color);
+  background-color: #1e1c2a;
 }
 
 #menu-icon {
