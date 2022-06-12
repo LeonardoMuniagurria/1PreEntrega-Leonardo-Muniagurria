@@ -4,6 +4,13 @@
     grid-area: part1;
     grid-template-areas: "part1 part1";
     align-items: center;
+    .part-img{
+        img{
+            max-width: 100%;
+            width: 500px;
+            height: auto;
+        }
+    }
     .part-img2{
         img{
             width: 100%;
@@ -13,6 +20,23 @@
             &:hover{
                 transform: scale(1.2); 
             }  
+        }
+    }
+    .part-text{
+        span{
+            color: $main-color;
+            font-weight: 600;
+        }
+        h2{
+            font-size: $h2-font;
+            color:$main-color;
+        }
+        p{
+            margin: 0.8rem 0 1.8rem;
+            line-height: 1.7; 
+        }
+        h3{
+            margin: 0.8rem 0;
         }
     }
     .part-text2{

@@ -1,0 +1,25 @@
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 1.5rem;
+    margin-top: 4rem;
+    .s-box{
+        text-align: center;
+        padding: 20px 30px;
+        h3{
+            margin: 4px 0 10px;
+            color: $main-color;
+            font-size: 1.2rem;
+        }
+        p{
+            line-height: 1.7;  
+        }
+        img{
+            width: 90px;
+            transition: .4s;
+            &:hover{
+                transform: scale(1.2); 
+            }
+        }
+    }
+}

@@ -10,6 +10,9 @@ $p-font:0.9rem;
 @import "part";
 @import "media";
 @import "inicio3";
+@import "inicio1";
+@import "menu";
+@import "service";
 
 
 *{
@@ -35,11 +38,4 @@ section{
     font-size: 2rem;
     cursor: pointer;
     display: none;
-}
-.col p{
-    color: #9897a9;
-    font-size: 1.1rem;
-    display: block;
-    text-transform: capitalize;
-    transition: .4s;
 }
