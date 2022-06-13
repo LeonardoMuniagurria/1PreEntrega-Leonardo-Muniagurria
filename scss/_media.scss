@@ -4,21 +4,24 @@
         grid-template-rows: 1fr;
         grid-template-areas:
         "inicio1"
-        "inicio1"        
+        "inicio1"
+    }
+    .inicio-texto{
+        h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+    .inicio-texto{
+        h2{
+            font-size: 2rem;
+            text-align: center;
+        }
     }
     .inicio-img{
         img{
             width: 100%;
         }
-    }
-    .inicio-texto h1{
-        font-size: 3rem;
-        text-align: center;
-        
-    }
-    .inicio-texto h2{
-        font-size: 2rem;
-        text-align: center;
     }
     .inicio2{
         grid-template-columns: 1fr;

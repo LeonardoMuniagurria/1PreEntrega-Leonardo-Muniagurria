@@ -116,9 +116,6 @@ footer {
         grid-template-rows: 1fr;
         grid-template-areas: "inicio1" "inicio1";
   }
-  .inicio-img img {
-    width: 100%;
-  }
   .inicio-texto h1 {
     font-size: 3rem;
     text-align: center;
@@ -126,6 +123,9 @@ footer {
   .inicio-texto h2 {
     font-size: 2rem;
     text-align: center;
+  }
+  .inicio-img img {
+    width: 100%;
   }
   .inicio2 {
     -ms-grid-columns: 1fr;
@@ -228,32 +228,30 @@ footer {
   min-height: 90vh;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: inicio1;
+  grid-area: "inicio1";
       grid-template-areas: "inicio1 inicio1";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.inicio-img img {
-  max-width: 120%;
-  width: 900px;
-  height: auto;
-}
-
-.inicio-texto h1 {
+.inicio .inicio-texto h1 {
   font-size: 5rem;
   color: #03c3f3;
 }
 
-.inicio-texto h2 {
+.inicio .inicio-texto h2 {
   font-size: 2.25rem;
   margin: 1rem 0 2rem;
+}
+
+.inicio .inicio-img img {
+  max-width: 120%;
+  width: 900px;
+  height: auto;
 }
 
 .heading {
