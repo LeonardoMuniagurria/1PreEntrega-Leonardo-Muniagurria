@@ -239,7 +239,7 @@ footer {
   .part1 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "part1text" "part1img"; }
+    grid-template-areas: "part1text" "part1img"; }
   .seccion2, .part2 {
     flex-direction: column; }
     .seccion2 .seccion2-img img, .part2 .seccion2-img img {
