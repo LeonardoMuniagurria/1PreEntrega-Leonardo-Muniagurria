@@ -1,10 +1,6 @@
 @media screen and (max-width:576px){
     .inicio{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "inicio1"
-        "inicio1"
+        flex-direction: column;
     }
     .inicio-texto{
         h1{
@@ -20,38 +16,46 @@
     }
     .inicio-img{
         img{
-            width: 100%;
+            width: 100px;      
         }
     }
     .inicio2{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-        "inicio2"
-        "inicio2"
+        "inicioimg2"
+        "iniciotexto2"
     }
     .part{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 
-        "part1"
-        "part1"
+        "parttext"
+        "partimg"
     }
-    .inicio3{
+    .part1{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: 
-        "inicio3"
-        "inicio3"
+        grid-template-areas: "part1text" "part1img";
     }
-    .inicio-img3{
-        img{
-           width: 50px; 
+    .seccion2{
+        flex-direction: column;
+        .seccion2-img{
+            img{
+                width: 300px;
+                padding: 30px;
+            }
         }
     }
-    .part-img4{
-        img{
-            width: 100%;
+    .part2{
+        flex-direction: column;
+        .part2-img2{
+            img{
+                width: 350px;
+                height: 350px;
+            }
         }
-    }      
+    }
+    
+    
 }

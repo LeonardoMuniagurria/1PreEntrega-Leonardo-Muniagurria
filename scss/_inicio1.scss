@@ -1,11 +1,7 @@
 .inicio{
     width: 100%;
     min-height: 90vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5rem;
-    grid-area: "inicio1";
-    grid-template-areas: "inicio1 inicio1";
+    display: flex;
     align-items: center;
     .inicio-texto{
         h1{
@@ -22,6 +18,10 @@
             max-width: 120%;
             width: 900px;
             height: auto;
+            transition: .4s;
+            &:hover{
+                transform: scale(1.2);
+            }
         }
     }
     

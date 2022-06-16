@@ -1,16 +1,8 @@
 .part{
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-area: part1;
-    grid-template-areas: "part1 part1";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "parttext partimg";
     align-items: center;
-    .part-img{
-        img{
-            max-width: 100%;
-            width: 500px;
-            height: auto;
-        }
-    }
     .part-img2{
         img{
             width: 100%;
@@ -21,36 +13,20 @@
                 transform: scale(1.2); 
             }  
         }
-    }
-    .part-text{
-        span{
-            color: $main-color;
-            font-weight: 600;
-        }
-        h2{
-            font-size: $h2-font;
-            color:$main-color;
-        }
-        p{
-            margin: 0.8rem 0 1.8rem;
-            line-height: 1.7; 
-        }
-        h3{
-            margin: 0.8rem 0;
-        }
+        grid-area: partimg;
     }
     .part-text2{
-            h2{
-                color: $main-color;
-                font-size: $h2-font; 
-            } 
-            p{
-                font-size: 20px;
-                margin: 0.8rem 0 1.8rem;
-                line-height: 1.7rem; 
-            }
-            h3{
-                margin: 0.8rem 0;  
-            }
+           span{
+            color: $main-color;
+            font-weight: 600;
+           }
+           h2{
+            font-size: $h2-font;
+           }
+           p{
+            font-size: 20px;
+            margin: 0.8rem 0 1.8rem;
+             line-height: 1.7rem;
+           }
         }
     }

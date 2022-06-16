@@ -4,9 +4,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
-    grid-area: "inicio2";
-    grid-template-areas: "inicio2 inicio2";
+    grid-template-areas: "inicioimg2 iniciotexto2";
     align-items: center;
+    .inicio-img2{
+        grid-area: inicioimg2;
+    }
     .inicio-img2{
         img{
             max-width: 100%;
@@ -19,13 +21,6 @@
         }
     }
     .inicio-texto2{
-        h1{
-            font-size: $big-font;
-            color: $main-color; 
-        }
-        h2{
-            font-size: $h2-font;
-            margin: 1rem 0 2rem; 
-        }
+        grid-area: iniciotexto2;
     }
 }
