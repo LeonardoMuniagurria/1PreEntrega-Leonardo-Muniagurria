@@ -1,3 +1,2 @@
 # Proyecto-FlaxARG
-El Proyecto-FlaxARG es un proyecto que trata sobre una tienda online de animaciones y diseños 100% de minecraft.
-El Proyecto actualmente esta casi terminado.
+Es un Proyecto que trata sobre una empresa/tienda 100% online que comercializa animaciones y diseños de minecraft a pedido, Actualmente la pagina solo es estatica por lo que es todo visual. El desarrollo de la misma esta casi terminada.
