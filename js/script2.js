@@ -11,43 +11,38 @@ let precioProductC = 800;
 let stockProductC = 10;
 
 
-let cantidadDeCompras = prompt("¿Que cantidad de productos desea llevar el dia de hoy? \n- 1 \n- 2 \n- 3")
-let priceFinal = 0;
+let cantidadDeCompras = parseInt(prompt("¿Que cantidad de productos desea llevar el dia de hoy? \n- 1 \n- 2 \n- 3"))
+let precioFinal = 0;
+
+function calculoPrecio(cantidad, precio){
+    precioFinal += cantidad * precio
+}
+
+function calculoStock(cantidad, stock, precio){
+    if(stock >= cantidad){
+        calculoPrecio(cantidad, precio)
+        alert("El precio total es de: $" + (cantidad * precio))
+    }
+    else{
+        alert("No tenemos en stock ese producto en este momento. Nuestro stock actual es de: " + stock + " unidades")
+    }
+}
 
 for(i = 0; i < cantidadDeCompras ; i++){
 
-    let StartBuy = prompt("¿Cual de nuestros productos disponibles quiere comprar? Porfavor elija entre estas opciones: \n- Renders \n- Animations \n- Photos")
+    let CompraInicio = prompt("¿Cual de nuestros productos disponibles quiere comprar? Porfavor elija entre estas opciones: \n- Renders \n- Animations \n- Photos")
     let cantidadBuy = parseInt(prompt("Excelente, ¿Cuantos quiere comprar? "))
-    alert(" Perfecto, en caso de superar un monto de 5000, estara participando de un sorteo. Le deseamos suerte.")
 
-    if(StartBuy == "Renders"){
-        if(stockProductA >= cantidadBuy){
-            priceFinal += cantidadBuy * precioProductA
-            alert("Su precio es de : $" + (cantidadBuy * precioProductA))
-        }
-        else{
-            alert("Ahora mismo, no disponemos de ese stock. A continuacion nuestro stock actual es de: " + stockProductA + "Entrantes")
-        }
+    if(CompraInicio == "Renders"){
+        calculoStock(cantidadBuy, stockProductA, precioProductA)
        
     }
-    else if(StartBuy == "Animations"){
-        if(stockProductB >= cantidadBuy){
-            priceFinal += cantidadBuy * precioProductB
-            alert("Su precio es de : $" + (cantidadBuy * precioProductB))
-        }
-        else{
-            alert("Ahora mismo, no disponemos de ese stock. A continuacion nuestro stock actual es de: " + stockProductA + "Entrantes")
-        }
+    else if(CompraInicio == "Animations"){
+        calculoStock(cantidadBuy , stockProductB, precioProductB)
        
     }
-    else if(StartBuy == "Photos"){
-        if(stockProductC >= cantidadBuy){
-            priceFinal += cantidadBuy * precioProductC
-            alert("Su precio es de : $" + (cantidadBuy * precioProductC))
-        }
-        else{
-            alert("Ahora mismo, no disponemos de ese stock. A continuacion nuestro stock actual es de: " + stockProductA + "Entrantes")
-        }
+    else if(CompraInicio == "Photos"){
+        calculoStock(cantidadBuy, stockProductC, precioProductC)
        
     }
     else{
@@ -57,32 +52,32 @@ for(i = 0; i < cantidadDeCompras ; i++){
       
 }
 
-switch(true){
-    case priceFinal < 3000 || priceFinal < 1500:
-        priceFinal = priceFinal * 0.85
+console.log(precioFinal)
+switch(true){ 
+    case precioFinal < 1000:
+        precioFinal = precioFinal * 0.90
+        alert("Perfecto, ademas te regalamos un 10% de descuento por tu compra!")
+        break;
+    case precioFinal <= 1000 || precioFinal < 3000:
+        precioFinal = precioFinal * 0.85
         alert("Perfecto, ademas te regalamos un 15% de descuento por tu compra!")
         break;
-    case priceFinal < 5000: 
-        priceFinal = priceFinal * 0.70
+    case precioFinal <= 3000 || precioFinal < 7000: 
+        precioFinal = precioFinal * 0.70
         alert("Perfecto, ademas te regalamos un 30% de descuento por tu compra!")
         break;
-    case priceFinal < 7000: 
-        priceFinal = priceFinal * 0.50
-        alert("Perfecto, ademas te regalamos un 50% de descuento por tu compra!")
-        break;
-    case priceFinal < 1000:
-            priceFinal = priceFinal * 0.30
-            alert("Perfecto, ademas te regalamos un 70% de descuento por tu compra!")
-            break;
-    default:
-        console.log(priceFinal)
+    default: 
+        console.log(precioFinal)
         alert("Estamos confundidos, porfavor ingresa un precio en numeros!")
         break;
 }
+    
+
 
 function aplicoIva(price){
+    console.log(price)
     return price * 1.21
 }
 
-let impuestoAplicado = aplicoIva(priceFinal)
+let impuestoAplicado = aplicoIva(precioFinal)
 alert ("El precio final con impuestos es de: " + impuestoAplicado)
