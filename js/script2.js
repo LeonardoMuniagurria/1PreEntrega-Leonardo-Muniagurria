@@ -146,7 +146,6 @@ function aplicoIva(price){
     console.log(price)
 =======
     console.log(price) //consologueá siempre para chequear como entra el parámetro en la función o para verificar una correcta operación
->>>>>>> 3abc11d0c5ff53f5c5dd1cc03fa3a56452e7627d
     return price * 1.21
 }
 
