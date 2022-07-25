@@ -33,7 +33,7 @@ productoB.iva()
 productoC.iva()
 
 
-let cantidadDeCompras = parseInt(prompt("¿Que cantidad de productos desea llevar el dia de hoy? \n" + nuevosProductos.join("\n")))
+let cantidadDeCompras = parseInt(prompt("¿Que cantidad de productos desea llevar el dia de hoy? \n-1  \n-2  \n-3" ))
 let precioFinal = 0;
 
 function calculoPrecio(cantidad, precio){
@@ -57,7 +57,7 @@ function calculoStock(cantidad, productos){
 //incluir la iteración FOR adentro de un condicional (si es un numero que haga tal cosa y sino: que haga tal otra ==> volver a preguntar)
 for(i = 0; i < cantidadDeCompras ; i++){
 
-    let CompraInicio = prompt("¿Cual de nuestros productos disponibles quiere comprar? Porfavor elija entre estas opciones: \n- Renders \n- Animations \n- Photos")
+    let CompraInicio = prompt("¿Cual de nuestros productos disponibles quiere comprar? Porfavor elija entre estas opciones: \n" + nuevosProductos.join("\n") )
     let cantidadBuy = parseInt(prompt("Excelente, ¿Cuantos quiere comprar? "))
 
     if(CompraInicio == productoA.nombre){
@@ -70,6 +70,17 @@ for(i = 0; i < cantidadDeCompras ; i++){
     }
     else if(CompraInicio == productoC.nombre){
         calculoStock(cantidadBuy, productoC)
+    
+       
+    }
+    else if(CompraInicio == productoD.nombre){
+        calculoStock(cantidadBuy, productoD)
+    
+       
+    }
+    else if(CompraInicio == productoE.nombre){
+        calculoStock(cantidadBuy, productoE)
+    
        
     }
     else{
