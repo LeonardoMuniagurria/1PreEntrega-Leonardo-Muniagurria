@@ -89,3 +89,9 @@ for(i = 0; i < cantidadDeCompras ; i++){
     }
       
 }
+
+const resultados = [150, 300, 250, 500, 300, 1000, 900];
+function buscar (elemento){
+    return elemento >= 400
+}
+console.log(resultados.find(buscar))
